@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Orca — your coding agents, in your pocket</title>
+<meta name="description" content="Orca watches and steers your Claude Code and OpenCode agents from your phone, over your own private network. Private alpha.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#F5F1EA" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1F1C19" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Orca — your coding agents, in your pocket">
+<meta property="og:image" content="https://sazardev.github.io/orca-site/assets/img/og.png">
+<meta property="og:url" content="https://sazardev.github.io/orca-site/">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:description" content="A private alpha. Watch and steer your coding agents from your phone.">
+<link rel="icon" href="assets/img/orca-mark.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/Geist-SemiBold.woff" as="font" type="font/woff" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+<script>document.documentElement.className+=' js'</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><symbol id="orca" viewBox="18 30 72 48"><path fill="currentColor" d="M 86.99 55.15 C 86.28 50.71 80.46 48.44 73.20 48.68 C 67.77 48.90 63.24 49.07 60.48 48.87 C 58.67 43.24 55.61 38.25 51.21 33.48 C 49.38 39.24 49.48 45.60 50.40 51.38 C 42.98 53.47 37.70 57.49 35.01 60.65 C 31.03 58.55 25.88 54.81 20.36 51.58 C 22.91 56.19 26.28 60.21 29.81 62.39 C 27.13 65.55 25.16 70.41 24.16 75.58 C 28.70 72.59 32.79 69.66 36.44 66.81 C 43.81 70.19 56.96 72.67 68.30 69.50 C 79.65 66.34 87.90 60.93 86.99 55.15 Z"/><path fill="var(--orca-white,#fff)" d="M 87.27 56.93 C 85.45 62.69 78.87 67.19 68.37 69.95 C 61.34 71.61 54.01 71.31 48.25 69.49 C 55.43 68.81 61.30 65.60 66.29 62.53 C 72.95 58.56 80.02 57.17 87.27 56.93 Z"/><path fill="var(--orca-white,#fff)" d="M 66.28 53.88 C 68.50 50.61 72.80 49.02 76.53 49.52 C 74.35 53.05 70.05 54.65 66.28 53.88 Z"/></symbol></defs></svg>
+
+<header class="nav">
+  <a class="brand" href="./" aria-label="Orca, home"><svg aria-hidden="true"><use href="#orca"/></svg>Orca</a>
+  <ul>
+    <li><a class="link" href="#story">Actions</a></li>
+    <li><a class="link" href="#flows">Flows</a></li>
+    <li><a class="link" href="#theme">Theme</a></li>
+    <li><a class="link" href="setup/">Setup</a></li>
+    <li><a class="link" href="config/">Config</a></li>
+  </ul>
+  <span class="chip"><i></i>Private alpha</span>
+  <button class="icon-btn" type="button" data-theme-toggle aria-label="Toggle light and dark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg></button>
+</header>
+
+<div class="gauge" aria-hidden="true"><span>0 m</span></div>
+
+<main id="main">
+
+<!-- ======================= HERO ======================= -->
+<section class="hero" data-scene="exit" aria-label="Orca">
+  <svg class="sun" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="92" pathLength="1"/><circle cx="100" cy="100" r="76" pathLength="1"/></svg>
+  <div class="wrap">
+    <p class="eyebrow" style="animation:up 1s .1s var(--ease) both">Alpha · 0.10 · by invitation</p>
+    <h1 aria-label="Orca"><span style="--i:0" aria-hidden="true">O</span><span style="--i:1" aria-hidden="true">r</span><span style="--i:2" aria-hidden="true">c</span><span style="--i:3" aria-hidden="true">a</span></h1>
+    <p class="tag">Your coding agents, in your pocket.</p>
+    <div class="meta">
+      <a class="btn" href="#story">See what it does <span aria-hidden="true">↓</span></a>
+      <a class="btn ghost" href="setup/">How it is set up</a>
+    </div>
+  </div>
+  <div class="orca-swim" aria-hidden="true"><div class="bob"><svg><use href="#orca"/></svg></div></div>
+  <div class="cue" aria-hidden="true">Scroll<i></i></div>
+  <div class="edge" aria-hidden="true">
+    <svg class="b" viewBox="0 0 2400 120" preserveAspectRatio="none"><path d="M0 66Q150 22 300 66T600 66T900 66T1200 66T1500 66T1800 66T2100 66T2400 66V120H0Z"/></svg>
+    <svg viewBox="0 0 2400 120" preserveAspectRatio="none"><path d="M0 80Q100 44 200 80T400 80T600 80T800 80T1000 80T1200 80T1400 80T1600 80T1800 80T2000 80T2200 80T2400 80V120H0Z"/></svg>
+  </div>
+</section>
+
+<!-- ======================= DIVE ======================= -->
+<section class="deep dive" aria-labelledby="dive-h">
+  <div class="bubbles" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="eyebrow" data-reveal>The idea</p>
+    <h2 id="dive-h" data-scene="read" data-words style="margin-top:28px">Your agents keep working on <em>your PC</em>. Orca lets you look in, answer them and steer them, from wherever you are.</h2>
+    <p class="lede" data-reveal>No cloud in between. No account. A small server next to the agents, your phone, and your own private network.</p>
+  </div>
+  <div class="edge" aria-hidden="true">
+    <svg class="b" viewBox="0 0 2400 120" preserveAspectRatio="none"><path d="M0 70Q75 36 150 70T300 70T450 70T600 70T750 70T900 70T1050 70T1200 70T1350 70T1500 70T1650 70T1800 70T1950 70T2100 70T2250 70T2400 70V120H0Z"/></svg>
+    <svg viewBox="0 0 2400 120" preserveAspectRatio="none"><path d="M0 76Q150 36 300 76T600 76T900 76T1200 76T1500 76T1800 76T2100 76T2400 76V120H0Z"/></svg>
+  </div>
+</section>
+
+<!-- ======================= FLOW ======================= -->
+<section class="deep flow" data-scene="sticky" aria-labelledby="flow-h">
+  <div class="stick">
+    <div class="wrap">
+      <p class="eyebrow">How it travels</p>
+      <h2 id="flow-h" style="margin-top:16px">Three hops. All of them yours.</h2>
+    </div>
+    <div class="wrap">
+      <svg class="diagram" viewBox="0 0 1000 340" role="img" aria-label="The phone talks over Tailscale to a small server on your PC, which talks to Herdr and your agents.">
+        <g data-s="3">
+          <path class="wire" d="M180 170H438"/>
+          <path class="wire live" d="M180 170H438"/>
+          <circle class="packet" r="5"><animateMotion dur="2.2s" repeatCount="indefinite" path="M180 170H438"/></circle>
+          <rect class="node" x="40" y="45" width="140" height="250" rx="28"/>
+          <svg x="64" y="150" width="92" height="62" style="color:#E8F1F2"><use href="#orca"/></svg>
+          <text x="110" y="82" text-anchor="middle">Your phone</text>
+          <text class="sub" x="110" y="270" text-anchor="middle">Orca app</text>
+        </g>
+        <g data-s="2">
+          <path class="wire" d="M562 170H760"/>
+          <path class="wire live" d="M562 170H760"/>
+          <circle class="packet" r="5"><animateMotion dur="2.2s" begin="1.1s" repeatCount="indefinite" path="M562 170H760"/></circle>
+          <circle class="ping" cx="500" cy="170" r="62"/>
+          <circle class="node" cx="500" cy="170" r="62"/>
+          <g fill="#A9D6DF"><circle cx="500" cy="136" r="4"/><circle cx="529" cy="153" r="4"/><circle cx="529" cy="187" r="4"/><circle cx="500" cy="204" r="4"/><circle cx="471" cy="187" r="4"/><circle cx="471" cy="153" r="4"/><circle cx="500" cy="170" r="5"/></g>
+          <text x="500" y="262" text-anchor="middle">Tailscale</text>
+          <text class="sub" x="500" y="283" text-anchor="middle">your tailnet · https</text>
+        </g>
+        <g data-s="1">
+          <rect class="node" x="760" y="28" width="210" height="284" rx="24"/>
+          <text x="865" y="62" text-anchor="middle">Your PC</text>
+          <g font-family="var(--mono)">
+            <rect class="node" x="780" y="82" width="170" height="44" rx="12"/><text class="sub" x="865" y="109" text-anchor="middle">orca-server · :2588</text>
+            <rect class="node" x="780" y="138" width="170" height="44" rx="12"/><text class="sub" x="865" y="165" text-anchor="middle">Herdr</text>
+            <rect class="node" x="780" y="194" width="80" height="44" rx="12"/><text class="sub" x="820" y="221" text-anchor="middle">Claude</text>
+            <rect class="node" x="870" y="194" width="80" height="44" rx="12"/><text class="sub" x="910" y="221" text-anchor="middle">OpenCode</text>
+          </g>
+          <circle cx="796" cy="204" r="3.5" fill="#E2B85C"/><circle cx="886" cy="204" r="3.5" fill="#8FB093"/>
+          <text class="sub" x="865" y="276" text-anchor="middle">agents live here</text>
+        </g>
+      </svg>
+    </div>
+    <div class="wrap">
+      <ol class="steps">
+        <li class="on"><b>1 · The agents stay home</b><span>Claude Code and OpenCode keep running inside Herdr on your PC. Nothing moves to a server farm.</span></li>
+        <li><b>2 · A small server speaks for them</b><span>One Python file with no dependencies reads their screens and conversations and offers a tiny API.</span></li>
+        <li><b>3 · Your phone asks over Tailscale</b><span>HTTPS inside your own tailnet. The app polls it, notifies you, and sends your answers back.</span></li>
+      </ol>
+    </div>
+  </div>
+  <div class="edge" aria-hidden="true" style="bottom:-1px">
+    <svg class="b" viewBox="0 0 2400 120" preserveAspectRatio="none"><path d="M0 60Q100 12 200 60T400 60T600 60T800 60T1000 60T1200 60T1400 60T1600 60T1800 60T2000 60T2200 60T2400 60V120H0Z"/></svg>
+    <svg viewBox="0 0 2400 120" preserveAspectRatio="none"><path d="M0 82Q75 52 150 82T300 82T450 82T600 82T750 82T900 82T1050 82T1200 82T1350 82T1500 82T1650 82T1800 82T1950 82T2100 82T2250 82T2400 82V120H0Z"/></svg>
+  </div>
+</section>
+
+<!-- ======================= STORY ======================= -->
+<section class="story" id="story" aria-labelledby="story-h">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow" data-reveal>What it does</p>
+      <h2 id="story-h" data-reveal style="--d:1">Everything you would do at the desk, in the palm of a hand.</h2>
+    </div>
+    <div class="grid">
+      <div class="cards">
+        <article class="card"><span class="n">01</span><h3>Every agent, at a glance</h3><p>Agents are grouped by what you must do: the ones that need you first, then the ones working, then the ones that finished. Search across all of them, or switch to History.</p><ul><li>Claude Code</li><li>OpenCode</li><li>Groups that stay collapsed</li></ul></article>
+        <article class="card"><span class="n">02</span><h3>A chat, not a terminal</h3><p>The real conversation: your words, its answers, its tool calls folded into “5 steps”. Markdown is drawn as written, code comes in blocks you copy with a tap, and Mermaid diagrams open to zoom.</p><ul><li>Hold Send to change mode</li><li>Files open read-only</li><li>Diagrams</li></ul></article>
+        <article class="card"><span class="n">03</span><h3>Questions, drawn as a form</h3><p>When Claude asks several things at once, Orca takes the message field's place with steps on top, rows with boxes, a review and a Submit. Yes/no questions get plain buttons.</p><ul><li>Pick one or many</li><li>An answer of your own</li></ul></article>
+        <article class="card"><span class="n">04</span><h3>Answer from the notice</h3><p>A permission question arrives with Yes and No right in the notification; a finished agent with a Reply field. They work with the app closed. Tapping opens exactly that conversation.</p><ul><li>No push service</li><li>Stays inside your tailnet</li></ul></article>
+        <article class="card"><span class="n">05</span><h3>One bubble for each agent</h3><p>Float an agent and it follows you over any app, wearing its project's color and mark, with a dot for what it is doing. The + adds another conversation or a new project. Bubbles only show while you are outside Orca.</p><ul><li>Project colors</li><li>Bar opens the app</li></ul></article>
+        <article class="card"><span class="n">06</span><h3>Pick it up again</h3><p>Every conversation Claude ever saved on the PC, in groups by day, with search, a project filter and an order. Resume starts Claude again in the folder it was had in, even if its agent was closed.</p><ul><li>Search</li><li>Filter</li><li>Resume</li></ul></article>
+        <article class="card"><span class="n">07</span><h3>Branches, side by side</h3><p>A project opens to its conversations, its branches and the agents on each. A new branch gets a worktree of its own, so agents on different branches never step on each other.</p><ul><li>Worktrees</li><li>Details</li><li>Git at a glance</li></ul></article>
+        <article class="card"><span class="n">08</span><h3>A terminal, for a moment</h3><p>Full screen, in the folder the agent works in, with colors and a row of keys. When you close it, Orca offers what happened so the agent knows what you did.</p><ul><li>Esc · Tab · ^C</li><li>Closes by itself</li></ul></article>
+        <article class="card"><span class="n">09</span><h3>Offline first, quietly</h3><p>The last answers of your server stay on the phone, only in the app's own folder, and show with a quiet Offline line when the PC is out of reach. A page tells you what is kept, read and sent.</p><ul><li>Your data</li><li>Forget buttons</li></ul></article>
+      </div>
+      <div class="sticky" aria-hidden="true">
+        <div class="phone">
+          <div class="screens">
+
+            <!-- 01 agents -->
+            <div class="screen">
+              <div class="m-status"><span>9:41</span><span>5G ▮▮▮</span></div>
+              <div class="m-title">Agents<small>Settings</small></div>
+              <div class="m-seg"><b class="on">Agents</b><b>History</b></div>
+              <div class="m-search">Search agents</div>
+              <div class="m-gh"><span>Needs you</span><span>1</span></div>
+              <div class="m-row"><i class="m-dot c-need"></i><div><b>serva</b><span>claude · Fix the login</span></div><em class="t-need">Needs you</em></div>
+              <div class="m-gh"><span>Working</span><span>2</span></div>
+              <div class="m-row"><i class="m-dot c-work"></i><div><b>road_to</b><span>opencode · Add tests</span></div><em class="t-work">Working</em></div>
+              <div class="m-row"><i class="m-dot c-work"></i><div><b>atlas</b><span>claude · Refactor the router</span></div><em class="t-work">Working</em></div>
+              <div class="m-gh"><span>Finished</span><span>1</span></div>
+              <div class="m-row"><i class="m-dot c-done"></i><div><b>kite</b><span>claude · Release notes</span></div><em class="t-done">Finished</em></div>
+              <div class="m-nav"><b class="on">Agents</b><b>Projects</b><b>Usage</b><b>Set Up</b></div>
+            </div>
+
+            <!-- 02 chat -->
+            <div class="screen">
+              <div class="m-status"><span>9:41</span><span>5G ▮▮▮</span></div>
+              <div class="m-bar"><u>Agents</u><b>serva</b><u>Options</u></div>
+              <div class="m-badge"><i class="m-dot c-work"></i>Working · claude · Sonnet 5.5</div>
+              <div class="m-body">
+                <div class="m-user">Fix the login when the token is stale</div>
+                <div class="m-ai">I found it: the refresh ran after the first request. I moved it <b>before</b> and added a test.</div>
+                <div class="m-steps">5 steps <u>Show</u></div>
+                <div class="m-code">if (token.isStale) {<br>&nbsp;&nbsp;await refresh();<br>}</div>
+                <div class="m-ai">Running the suite now…</div>
+              </div>
+              <div class="m-field"><span>Message the agent</span><b>Send</b></div>
+            </div>
+
+            <!-- 03 form -->
+            <div class="screen">
+              <div class="m-status"><span>9:41</span><span>5G ▮▮▮</span></div>
+              <div class="m-bar"><u>Agents</u><b>serva</b><u>Options</u></div>
+              <div class="m-tabs"><b class="done">✓ Stack</b><b class="on">Mode</b><b>Submit</b></div>
+              <div class="m-q">How should the new screen handle errors?</div>
+              <div class="m-opt on"><i></i><div>Inline, by the field<small>Stays until dismissed</small></div></div>
+              <div class="m-opt"><i></i><div>A banner on top<small>Dismisses itself</small></div></div>
+              <div class="m-opt"><i></i><div>Something else<small>Write your own answer</small></div></div>
+              <div class="m-cta">Next</div>
+            </div>
+
+            <!-- 04 notice -->
+            <div class="screen wall">
+              <div class="m-status"><span>9:41</span><span>5G ▮▮▮</span></div>
+              <div class="m-notice" style="margin-top:2.4em">
+                <header><span class="av sm" style="--c:#B5772E">S</span>Orca · now</header>
+                <h4>serva · Claude</h4>
+                <pre>Needs you · Run the tests?
+$ flutter test --coverage</pre>
+                <div class="acts"><b class="p">Yes</b><b>No</b><b>Reply</b></div>
+              </div>
+              <div class="m-notice" style="opacity:.85">
+                <header><span class="av sm" style="--c:#8B5E3C">RT</span>Orca · 2 min</header>
+                <h4>road_to · Claude</h4>
+                <pre>Finished · Add the offline banner</pre>
+                <div class="acts"><b>Reply</b></div>
+              </div>
+            </div>
+
+            <!-- 05 bubbles -->
+            <div class="screen wall">
+              <div class="m-status"><span>9:41</span><span>5G ▮▮▮</span></div>
+              <div class="stack"><span class="av" data-st="need" style="--c:#B5772E">S</span><span class="av" data-st="work" style="--c:#8B5E3C">RT</span><span class="av" data-st="done" style="--c:#5C7F4F">A</span></div>
+              <div class="panel">
+                <div class="m-bar"><span><i class="av sm" style="--c:#B5772E;font-style:normal">S</i><b>serva</b></span><span><i>↗</i><i>+</i></span></div>
+                <div class="m-badge"><i class="m-dot c-need"></i>Needs you · claude</div>
+                <div class="m-body">
+                  <div class="m-ai">Can I run <b>flutter test</b> before I commit?</div>
+                  <div class="m-user">Yes, then commit</div>
+                </div>
+                <div class="m-field go"><span>Message the agent</span><b>Send</b></div>
+              </div>
+            </div>
+
+            <!-- 06 history -->
+            <div class="screen">
+              <div class="m-status"><span>9:41</span><span>5G ▮▮▮</span></div>
+              <div class="m-title">Agents</div>
+              <div class="m-seg"><b>Agents</b><b class="on">History</b></div>
+              <div class="m-search">login</div>
+              <div class="m-chips"><b>All projects</b><b>Latest first</b></div>
+              <div class="m-gh"><span>Today</span><span>3 conversations</span></div>
+              <div class="m-hit hot"><b>Fix the login</b><span>serva · main · 14:05 · Open now</span></div>
+              <div class="m-gh"><span>Yesterday</span><span></span></div>
+              <div class="m-hit"><b>Token refresh strategy</b><span>serva · feat/auth · worktree</span></div>
+              <div class="m-hit"><b>Login screen copy</b><span>kite · main</span></div>
+              <div class="m-cta" style="margin-top:auto">Resume this conversation</div>
+            </div>
+
+            <!-- 07 branches -->
+            <div class="screen">
+              <div class="m-status"><span>9:41</span><span>5G ▮▮▮</span></div>
+              <div class="m-bar"><u>←</u><b>serva</b><u>Pin</u></div>
+              <div class="m-tab3"><b>History</b><b class="on">Branches</b><b>Details</b></div>
+              <div class="m-bar" style="padding-bottom:0"><u>New branch</u></div>
+              <div class="m-branch"><b>main · current</b><u>Start here</u><span>Fix the login · Oct 22</span></div>
+              <div class="m-branch"><b>feat/auth · worktree</b><u>Start here</u><span>Refresh tokens early · Oct 21</span><div class="ag"><i class="m-dot c-work"></i>claude · Add token tests · Working</div></div>
+              <div class="m-branch"><b>fix/stale-token · worktree</b><u>Start here</u><span>Handle a bad token · Oct 20</span><div class="ag"><i class="m-dot c-done"></i>claude · Hotfix · Finished</div></div>
+              <div class="m-branch"><b>chore/deps</b><u>Start here</u><span>Bump packages · Oct 18</span></div>
+            </div>
+
+            <!-- 08 terminal -->
+            <div class="screen term">
+              <div class="m-status"><span>9:41</span><span>5G ▮▮▮</span></div>
+              <div class="m-bar" style="color:#D9E4E6"><u style="color:#8FB093">Done</u><b>Terminal</b><u style="color:#8DA2A8">~/Work/serva</u></div>
+              <pre><span class="g">serva</span> <span class="d">main</span> ❯ flutter test
+<span class="d">00:03 +112:</span> <span class="g">All tests passed!</span>
+<span class="g">serva</span> <span class="d">main</span> ❯ git status -s
+ <span class="o">M</span> lib/auth/token.dart
+<span class="g">serva</span> <span class="d">main</span> ❯ <span class="cur"></span></pre>
+              <div class="keys"><b>Esc</b><b>Tab</b><b>^C</b><b>^D</b><b>↑</b><b>↓</b><b>Send to the agent</b></div>
+              <div class="m-field" style="margin-top:.2em"><span style="background:#14181B;color:#8DA2A8;border-color:#2c3438">Type a command</span><b style="background:#232A2E;color:#D9E4E6">Run</b></div>
+            </div>
+
+            <!-- 09 offline -->
+            <div class="screen">
+              <div class="m-status"><span>9:41</span><span>✈</span></div>
+              <div class="m-off">Offline — showing what was saved at 14:05</div>
+              <div class="m-title">Agents</div>
+              <div class="m-row"><i class="m-dot c-need"></i><div><b>serva</b><span>claude · Fix the login</span></div><em class="t-need">Needs you</em></div>
+              <div class="m-row"><i class="m-dot c-work"></i><div><b>road_to</b><span>opencode · Add tests</span></div><em class="t-work">Working</em></div>
+              <div class="m-row"><i class="m-dot c-done"></i><div><b>kite</b><span>claude · Release notes</span></div><em class="t-done">Finished</em></div>
+              <div class="m-saved"><span>Saved on this phone<br><small style="color:var(--m-muted)">23 answers · 1.2 MB</small></span><u>Clear</u></div>
+              <div class="m-nav"><b class="on">Agents</b><b>Projects</b><b>Usage</b><b>Set Up</b></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="edge" aria-hidden="true">
+    <svg class="b" viewBox="0 0 2400 120" preserveAspectRatio="none"><path d="M0 68Q150 28 300 68T600 68T900 68T1200 68T1500 68T1800 68T2100 68T2400 68V120H0Z"/></svg>
+    <svg viewBox="0 0 2400 120" preserveAspectRatio="none"><path d="M0 78Q100 44 200 78T400 78T600 78T800 78T1000 78T1200 78T1400 78T1600 78T1800 78T2000 78T2200 78T2400 78V120H0Z"/></svg>
+  </div>
+</section>
+
+<!-- ======================= FLOWS ======================= -->
+<section class="sec flows" id="flows" aria-labelledby="flows-h">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow" data-reveal>Flows</p>
+      <h2 id="flows-h" data-reveal style="--d:1">Three small journeys, each one a few taps.</h2>
+    </div>
+
+    <div class="lane">
+      <div data-reveal="left"><h3>It needs you</h3><p class="lane-p">An agent stops to ask. You answer from wherever you are.</p></div>
+      <div class="track" style="--n:4">
+        <div class="stop" style="--i:0"><i></i><b>It asks</b><span>Claude wants to run <code>flutter test</code></span></div>
+        <div class="stop" style="--i:1"><i></i><b>A notice</b><span>Yes and No sit right in the shade</span></div>
+        <div class="stop" style="--i:2"><i></i><b>You tap Yes</b><span>The app can be closed</span></div>
+        <div class="stop" style="--i:3"><i></i><b>It carries on</b><span>The notice goes; the bubble keeps the chat</span></div>
+      </div>
+    </div>
+
+    <div class="lane">
+      <div data-reveal="left"><h3>Pick it up</h3><p class="lane-p">A conversation you closed days ago, alive again where you left it.</p></div>
+      <div class="track" style="--n:4">
+        <div class="stop" style="--i:0"><i></i><b>Open History</b><span>Every saved conversation, by day</span></div>
+        <div class="stop" style="--i:1"><i></i><b>Search, filter</b><span>By words, by project, by order</span></div>
+        <div class="stop" style="--i:2"><i></i><b>Resume</b><span>Claude starts in the folder it was had in</span></div>
+        <div class="stop" style="--i:3"><i></i><b>Keep going</b><span>The cursor is already in the field</span></div>
+      </div>
+    </div>
+
+    <div class="lane">
+      <div data-reveal="left"><h3>Side by side</h3><p class="lane-p">Several branches, one agent each, none in the way of another.</p></div>
+      <div class="track" style="--n:5">
+        <div class="stop" style="--i:0"><i></i><b>New branch</b><span>From any branch you have</span></div>
+        <div class="stop" style="--i:1"><i></i><b>A worktree</b><span>Its own folder, made for you</span></div>
+        <div class="stop" style="--i:2"><i></i><b>An agent</b><span>Claude or OpenCode, in that branch</span></div>
+        <div class="stop" style="--i:3"><i></i><b>A bubble each</b><span>Its project's color and mark</span></div>
+        <div class="stop" style="--i:4"><i></i><b>Watch them all</b><span>From the list, widgets or bubbles</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="edge" aria-hidden="true">
+    <svg class="b" viewBox="0 0 2400 120" preserveAspectRatio="none"><path d="M0 66Q150 22 300 66T600 66T900 66T1200 66T1500 66T1800 66T2100 66T2400 66V120H0Z"/></svg>
+    <svg viewBox="0 0 2400 120" preserveAspectRatio="none"><path d="M0 80Q100 44 200 80T400 80T600 80T800 80T1000 80T1200 80T1400 80T1600 80T1800 80T2000 80T2200 80T2400 80V120H0Z"/></svg>
+  </div>
+</section>
+
+<!-- ======================= THEME ======================= -->
+<section class="sec theme" id="theme" aria-labelledby="theme-h">
+  <div class="wrap grid">
+    <div>
+      <p class="eyebrow" data-reveal>Theme</p>
+      <h2 id="theme-h" data-reveal style="--d:1;margin-top:22px">Japandi by default. Yours by choice.</h2>
+      <p class="lede" data-reveal style="--d:2;margin-top:22px">Warm paper, clay and moss. Flat colors, words instead of icons, calm density. Pick a palette below and every phone on this page follows.</p>
+      <div class="ctrl" data-reveal style="--d:3">
+        <div><h4>Palette</h4><div class="pal" id="pal" role="group" aria-label="Palette"></div></div>
+        <div class="two" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:28px">
+          <div><h4>Mode</h4><div class="seg"><button type="button" data-mode="light" aria-pressed="true">Light</button><button type="button" data-mode="dark" aria-pressed="false">Dark</button></div></div>
+          <div><h4>Corners</h4><div class="seg"><button type="button" data-round="0.3" aria-pressed="false">Sharp</button><button type="button" data-round="1.1" aria-pressed="true">Standard</button><button type="button" data-round="1.7" aria-pressed="false">Round</button></div></div>
+          <div><h4>Density</h4><div class="seg"><button type="button" data-dens="1.35" aria-pressed="false">Spacious</button><button type="button" data-dens="1" aria-pressed="true">Standard</button><button type="button" data-dens="0.7" aria-pressed="false">Compact</button></div></div>
+        </div>
+        <div><h4>The colors</h4><div class="sw" id="sw"></div></div>
+      </div>
+    </div>
+    <div class="demo" data-reveal="scale" aria-hidden="true">
+      <div class="phone">
+        <div class="screen">
+          <div class="m-status"><span>9:41</span><span>5G ▮▮▮</span></div>
+          <div class="m-title">Agents</div>
+          <div class="m-seg"><b class="on">Agents</b><b>History</b></div>
+          <div class="m-search">Search agents</div>
+          <div class="m-gh"><span>Needs you</span><span>1</span></div>
+          <div class="m-row"><i class="m-dot c-need"></i><div><b>serva</b><span>claude · Fix the login</span></div><em class="t-need">Needs you</em></div>
+          <div class="m-gh"><span>Working</span><span>2</span></div>
+          <div class="m-row"><i class="m-dot c-work"></i><div><b>road_to</b><span>opencode · Add tests</span></div><em class="t-work">Working</em></div>
+          <div class="m-row"><i class="m-dot c-work"></i><div><b>atlas</b><span>claude · Refactor the router</span></div><em class="t-work">Working</em></div>
+          <div class="m-opt on" style="margin-top:.8em"><i></i><div>Accent and cards follow<small>every palette</small></div></div>
+          <div class="m-cta">Start an agent</div>
+          <div class="m-nav"><b class="on">Agents</b><b>Projects</b><b>Usage</b><b>Set Up</b></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="edge" aria-hidden="true">
+    <svg class="b" viewBox="0 0 2400 120" preserveAspectRatio="none"><path d="M0 70Q75 36 150 70T300 70T450 70T600 70T750 70T900 70T1050 70T1200 70T1350 70T1500 70T1650 70T1800 70T1950 70T2100 70T2250 70T2400 70V120H0Z"/></svg>
+    <svg viewBox="0 0 2400 120" preserveAspectRatio="none"><path d="M0 76Q150 36 300 76T600 76T900 76T1200 76T1500 76T1800 76T2100 76T2400 76V120H0Z"/></svg>
+  </div>
+</section>
+
+<!-- ======================= CALM ======================= -->
+<section class="sec calm" aria-labelledby="calm-h">
+  <div class="bubbles" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow" data-reveal>By design</p>
+      <h2 id="calm-h" data-reveal style="--d:1;font-size:clamp(2.2rem,5.4vw,4.6rem);max-width:12em">Calm, private, and honest about its data.</h2>
+    </div>
+    <div class="pillars">
+      <article class="pillar" data-reveal style="--d:0"><svg viewBox="0 0 40 40" aria-hidden="true"><rect x="9" y="17" width="22" height="16" rx="4"/><path d="M14 17v-4a6 6 0 0 1 12 0v4"/></svg><h3>Private by construction</h3><p>No account, no analytics, no third party. The phone talks only to your server, inside your own tailnet. Credentials never leave the PC.</p></article>
+      <article class="pillar" data-reveal style="--d:1"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M4 20s6-9 16-9 16 9 16 9-6 9-16 9S4 20 4 20Z"/><circle cx="20" cy="20" r="4.5"/></svg><h3>Read-only unless you ask</h3><p>Claude's history and OpenCode's database are only read. Branches, worktrees and settings change when you say so, and a Your data page shows every path and size.</p></article>
+      <article class="pillar" data-reveal style="--d:2"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M4 24c4-6 8-6 12 0s8 6 12 0 6-4 8-3"/><path d="M4 31c4-6 8-6 12 0s8 6 12 0 6-4 8-3"/><path d="M14 13a8 8 0 0 1 12 0"/></svg><h3>Quiet, and offline-first</h3><p>Notices only when something needs you or finishes. When the PC is out of reach the last answers still show, with a small line that says so.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= ALPHA ======================= -->
+<section class="sec deep alpha" id="alpha" aria-labelledby="alpha-h">
+  <div class="bubbles" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="eyebrow" data-reveal>Status</p>
+    <h2 id="alpha-h" data-scene="read" data-words style="margin-top:26px">Orca is in private alpha. Not open to the public — yet.</h2>
+    <p class="lede" data-reveal style="margin-top:30px">This page is a presentation, and a small leak of what it is becoming. It is built for one person's PC first; access is by invitation while it settles.</p>
+    <span class="stamp" data-reveal style="--d:1">Alpha · v0.10 · invite only</span>
+
+    <div class="glimpses">
+      <div class="glimpse" data-reveal><small>Today</small><h3>Version 0.10</h3><p>History and resume, branches and worktrees, a bubble for each agent, project details and a page for your data.</p></div>
+      <div class="glimpse" data-reveal style="--d:1"><small>On the bench</small><h3>More hands on the wheel</h3><p>OpenCode's own dialogs, and adding its MCP servers from the app.</p></div>
+      <div class="glimpse" data-reveal style="--d:2"><small>On the bench</small><h3>Bigger screens</h3><p>Tablets with the list, a conversation and bubbles together, polished on a real one.</p></div>
+      <div class="glimpse" data-reveal style="--d:3"><small>Next</small><h3>The one we have not named</h3><p>One more way to reach your agents: <span class="redact" data-delay="300">something from the desk, on the phone</span>.</p></div>
+    </div>
+    <p class="fine" data-reveal>Nothing here is a promise or a date. If you were invited, the <a href="setup/">setup</a> and <a href="config/">config</a> pages are for you.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>Orca · private alpha · © <span data-year>2026</span> sazardev</span>
+    <nav aria-label="Footer"><a href="setup/">Setup</a><a href="config/">Config</a><a href="https://github.com/sazardev">GitHub</a></nav>
+    <button type="button" data-motion-toggle>Full motion: off</button>
+  </div>
+</footer>
+
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>
